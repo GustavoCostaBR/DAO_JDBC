@@ -13,24 +13,27 @@ public class Program {
         // TODO Auto-generated method stub
 //        Department obj = new Department(1, "Books");
 //        Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.00, obj);
-        
+
         SellerDao sellerDao = DaoFactory.createSellerDao();
-        
+
         System.out.println("=== TEST 1: seller findByid ===");
-        
+
         Seller seller = sellerDao.findById(3);
-        
+
         System.out.println(seller);
-        
-        
+
         System.out.println("=== TEST 2: seller findBydepartment ===");
-        Department department = new Department(2, null);        
+        Department department = new Department(2, null);
         List<Seller> list = sellerDao.findByDepartment(department);
         for (Seller obj : list) {
             System.out.println(obj);
-            
+
+        }
+        System.out.println("=== TEST 3: seller findAll ===");
+        list = sellerDao.findAll();
+        for (Seller obj : list) {
+            System.out.println(obj);
         }
     }
-    
 
 }
