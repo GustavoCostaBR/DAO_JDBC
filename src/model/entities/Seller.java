@@ -28,51 +28,51 @@ public class Seller implements Serializable {
         this.department = department;
     }
 
-    private int getId() {
+    public int getId() {
         return id;
     }
 
-    private void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    private void setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    private Date getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    private void setBirthDate(Date birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
-    private double getBaseSalary() {
+    public double getBaseSalary() {
         return baseSalary;
     }
 
-    private void setBaseSalary(double baseSalary) {
+    public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
     }
 
-    private Department getDepartment() {
+    public Department getDepartment() {
         return department;
     }
 
-    private void setDepartment(Department department) {
+    public void setDepartment(Department department) {
         this.department = department;
     }
 
